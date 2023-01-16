@@ -8,7 +8,22 @@
 
 <body>
 	
-<button  id="btn">Submit</button>
+
+    <button id="btn" style="background-color: black; color: white; border-radius: 5px;">Submit</button>
+
+    <script>
+      var btn = document.getElementById("btn");
+      btn.onmouseover = function() {
+        this.style.backgroundColor = "yellow";
+        this.style.color = "black";
+        this.style.borderRadius = "30px";
+      }
+      btn.onmouseout = function() {
+        this.style.backgroundColor = "black";
+        this.style.color = "white";
+        this.style.borderRadius = "5px";
+      }
+    </script>
 
 </body>
 
